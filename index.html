@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .page {
+        width: 360px;
+        margin: auto;
+      }
+
+      table {
+        background: #efefef;
+        border-spacing: 10px;
+        text-align: center;
+      }
+
+      table .btn {
+        width: 60px;
+        background: gray;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        font-size: 1.5em;
+      }
+
+      #islem,
+      #gosterge {
+        padding: 5px;
+        text-align: right;
+      }
+
+      #gosterge {
+        height: 60px;
+        background: #ddfafa;
+        color: #333;
+        font-size: 1.8em;
+        text-align: right;
+        line-height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      #islem {
+        background-color: wheat;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>CALCULATOR</h1>
+      <table>
+        <tr>
+          <td id="islem" colspan="5"></td>
+        </tr>
+        <tr>
+          <td id="gosterge" colspan="5"></td>
+        </tr>
+        <tr>
+          <td class="btn rakam">7</td>
+          <td class="btn rakam">8</td>
+          <td class="btn rakam">9</td>
+          <td class="btn btnOpt">/</td>
+          <td class="btn btnCE">CE</td>
+        </tr>
+        <tr>
+          <td class="btn rakam">4</td>
+          <td class="btn rakam">5</td>
+          <td class="btn rakam">6</td>
+          <td class="btn btnOpt">*</td>
+          <td class="btn btnC">C</td>
+        </tr>
+        <tr>
+          <td class="btn rakam">1</td>
+          <td class="btn rakam">2</td>
+          <td class="btn rakam">3</td>
+          <td class="btn btnOpt">-</td>
+          <td rowspan="2" class="btn btnEsit">=</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="btn rakam">0</td>
+          <td class="btn btnNokta">.</td>
+          <td class="btn btnOpt">+</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="custom.js"></script>
+  </body>
+</html>
